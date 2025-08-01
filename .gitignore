@@ -1,0 +1,9 @@
+# Archivos y carpetas de compilación
+bin/
+obj/
+.vs/
+
+# Paquetes NuGet descargados
+*.nupkg
+packages/
+*.snupkg
