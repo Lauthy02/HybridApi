@@ -1,6 +1,7 @@
 ﻿using HybridApi.Data;
 using HybridApi.Models;
 using HybridApi.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ namespace HybridApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class HybridDataController : ControllerBase
     {
         private readonly ApiDbContext _context;
